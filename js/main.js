@@ -3,16 +3,37 @@ const productForm = document.getElementById("product-form");
 
 const addingProducts = document.querySelector(".adding-products");
 const viewProducts = document.querySelector(".view-products");
+const closeProductForm = document.querySelector(".close-product-form");
 // Displaying Add products form to add products
 addingProducts.addEventListener("click", function () {
   document.querySelector(".products-display").classList.remove("display-show");
   document.querySelector(".add-products").classList.add("display-show");
+  addingProducts.classList.add("display-none");
+  viewProducts.classList.remove("display-none");
 });
 // Displaying list of products Added
 viewProducts.addEventListener("click", function () {
   document.querySelector(".add-products").classList.remove("display-show");
   document.querySelector(".products-display").classList.add("display-show");
+  viewProducts.classList.add("display-none");
+  addingProducts.classList.remove("display-none");
 });
+// Close product form
+closeProductForm.addEventListener("click", function () {
+  document.querySelector(".add-products").classList.remove("display-show");
+  addingProducts.classList.remove("display-none");
+});
+// Cancel product adding button
+document
+  .querySelector(".cancel-product-adding")
+  .addEventListener("click", function () {
+    document.getElementById("title").value = "";
+    document.getElementById("price").value = "";
+    document.getElementById("stock").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("image-url").value = "";
+  });
+
 // product class
 class Product {
   constructor(title, price, stock, description, imageUrl) {

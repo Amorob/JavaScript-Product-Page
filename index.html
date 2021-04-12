@@ -15,8 +15,9 @@
       </div>
     </div>
     <div class="add-products">
-      <section class="heading">
-        <h1 class="form-heading">Add Products</h1>
+      <section class="product-form-heading">
+        <h1 class="">Add Products</h1>
+        <button class="close-product-form">x</button>
       </section>
       <section class="add-product-form">
         <form id="product-form">
@@ -40,7 +41,14 @@
             <label for="image">Image URL</label>
             <input type="text" id="image-url" class="full-width" required />
           </div>
-          <input type="submit" value="Add Poduct" class="full-width" />
+          <div class="product-add-and-cancel">
+            <input
+              type="submit"
+              value="Add Poduct"
+              class="add-product-adding"
+            />
+            <button class="cancel-product-adding">Cancel</button>
+          </div>
         </form>
       </section>
     </div>
