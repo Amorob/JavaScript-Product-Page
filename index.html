@@ -7,7 +7,14 @@
     <title>JavaScript Product Page Assignment</title>
   </head>
   <body>
-    <div class="container">
+    <div class="main-heading">
+      <h1>Products Page</h1>
+      <div>
+        <button class="adding-products">Add Products</button>
+        <button class="view-products">View Products</button>
+      </div>
+    </div>
+    <div class="add-products">
       <section class="heading">
         <h1 class="form-heading">Add Products</h1>
       </section>
@@ -36,23 +43,23 @@
           <input type="submit" value="Add Poduct" class="full-width" />
         </form>
       </section>
-     
-      <section class="products-display">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Price</th>
-              <th>Stock</th>
-              <th>Description</th>
-              <th>Image</th>
-              <th>Remove</th>
-            </tr>
-          </thead>
-          <tbody id="product-list"></tbody>
-        </table>
-      </section>
     </div>
+
+    <section class="products-display">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+      </table>
+    </section>
 
     <!-- <script src="js/es5.js"></script> -->
     <script src="js/main.js"></script>

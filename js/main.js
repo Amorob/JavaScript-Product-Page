@@ -1,5 +1,18 @@
 // Global Variables Declarations
 const productForm = document.getElementById("product-form");
+
+const addingProducts = document.querySelector(".adding-products");
+const viewProducts = document.querySelector(".view-products");
+// Displaying Add producta form to add products
+addingProducts.addEventListener("click", function () {
+  document.querySelector(".products-display").classList.remove("display-show");
+  document.querySelector(".add-products").classList.add("display-show");
+});
+// Displaying list of products Added
+viewProducts.addEventListener("click", function () {
+  document.querySelector(".add-products").classList.remove("display-show");
+  document.querySelector(".products-display").classList.add("display-show");
+});
 // product class
 class Product {
   constructor(title, price, stock, description, imageUrl) {
