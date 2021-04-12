@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>JavaScript Product Page Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="heading">
+        <h1 class="form-heading">Add Products</h1>
+      </section>
+      <section class="add-product-form">
+        <form id="product-form">
+          <div>
+            <label for="title">Title</label>
+            <input type="text" id="title" class="full-width" required />
+          </div>
+          <div>
+            <label for="price">Price</label>
+            <input type="text" id="price" class="full-width" required />
+          </div>
+          <div>
+            <label for="stock">Stock</label>
+            <input type="text" id="stock" class="full-width" required />
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <input type="text" id="description" class="full-width" required />
+          </div>
+          <div>
+            <label for="image">Image URL</label>
+            <input type="text" id="image-url" class="full-width" required />
+          </div>
+          <input type="submit" value="Add Poduct" class="full-width" />
+        </form>
+      </section>
+     
+      <section class="products-display">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Stock</th>
+              <th>Description</th>
+              <th>Image</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="product-list"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <!-- <script src="js/es5.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

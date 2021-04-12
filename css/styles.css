@@ -1,0 +1,77 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.container {
+  width: 65%;
+  margin: auto;
+  padding: 2rem;
+  align-content: center;
+}
+.form-heading {
+  background-color: #ff0055;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  display: inline-block;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+}
+form#product-form {
+  font-weight: bold;
+}
+.full-width {
+  display: block;
+  width: 50%;
+  margin: 0.5rem 0;
+}
+input {
+  padding: 0.3rem;
+  border-radius: 3px;
+  border: 0.6px solid #cccccc;
+}
+input:focus {
+  border: none;
+  border-bottom: 2px solid #ff0055;
+}
+input[type="submit"] {
+  background-color: #ff0055;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+}
+
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tr:nth-child(even) {
+  background-color: #faecec;
+}
+.table tr:nth-child("last") {
+  background-color: #f2f2;
+}
+th,
+td {
+  padding: 0.5rem 0;
+}
+th {
+  text-align: left;
+}
+.success,
+.error {
+  color: #ffffff;
+  padding: 5px;
+  margin: 5px 0;
+  display: inline-block;
+  width: 50%;
+}
+.success {
+  background-color: green;
+}
+.error {
+  background-color: red;
+}
