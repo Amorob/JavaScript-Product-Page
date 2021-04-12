@@ -3,7 +3,7 @@ const productForm = document.getElementById("product-form");
 
 const addingProducts = document.querySelector(".adding-products");
 const viewProducts = document.querySelector(".view-products");
-// Displaying Add producta form to add products
+// Displaying Add products form to add products
 addingProducts.addEventListener("click", function () {
   document.querySelector(".products-display").classList.remove("display-show");
   document.querySelector(".add-products").classList.add("display-show");
