@@ -40,6 +40,7 @@ button.adding-products {
   display: none;
   width: 65%;
   margin-left: auto;
+  z-index: 2;
 }
 .products-display {
   margin: auto;
@@ -105,7 +106,6 @@ input[type="submit"] {
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: bold;
-  padding: 5px;
   border: none;
 }
 /* Add and Cancel products adding */

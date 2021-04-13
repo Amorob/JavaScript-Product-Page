@@ -56,7 +56,7 @@ class UI {
          <td> ${Product.price}</td>
          <td> ${Product.stock}</td>
          <td> ${Product.description}</td>
-         <td> ${Product.imageUrl}</td>
+         <td>  <img src="${Product.imageUrl}" alt="${Product.title}">  </td>
          <td> <a href="#" class="delete-product">x</a></td>`;
     list.appendChild(row);
   }
